@@ -719,6 +719,7 @@ body {
 
   .navbar__right {
     gap: 0;
+    display:none;
   }
 
   .nav-cta {
@@ -726,15 +727,29 @@ body {
     font-size: 11px;
   }
 
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar__wordmark {
+    font-size: 24px;
+  }
+  .navbar__brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
   .hero {
     min-height: auto;
-    padding-top: 56px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 56px;
   }
 
   .hero__mountain {
-    height: 230px;
+    height: 260px;
     bottom: -1px;
+    transform: scale(1.3);
+    transform-origin: bottom center;
   }
 
   .hero__content {
