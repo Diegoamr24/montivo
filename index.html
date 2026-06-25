@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montivo Tech — Web Development &amp; Maintenance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <!-- ── NAV ── -->
+  <nav class="navbar">
+    <a href="#" class="navbar__brand">
+      <svg viewBox="0 0 100 100" class="navbar__brand-icon" aria-hidden="true">
+        <path d="M38 72 L38 42 L83 22 L83 72" fill="none" stroke="#A9863F" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"></path>
+        <path d="M13 72 L13 28 L48 56 L48 26" fill="none" stroke="#15211C" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"></path>
+      </svg>
+      <span class="navbar__wordmark">
+        <span class="navbar__wordmark-dark">Montivo</span><span class="navbar__wordmark-gold"> Tech</span>
+      </span>
+    </a>
+    <div class="navbar__right">
+      <div class="navbar__links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#maintenance" class="nav-link">Maintenance</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="/cdn-cgi/l/email-protection#86e2efe3e1e9e7e7ebf4b4b2c6e1ebe7efeaa8e5e9eb" class="nav-cta">Start a project</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+
+    <!-- Fitz Roy mountain — brand mark -->
+    <svg viewBox="0 0 1440 490" preserveAspectRatio="xMidYMax meet" aria-hidden="true" class="hero__mountain">
+
+      <!-- Back silhouette: offset for depth -->
+      <path transform="translate(18,-10)"
+        d="M 0,480 L 16.4,322.1
+           L 128.2,364.1
+           L 149.4,360.9
+           L 222.7,309.5
+           L 314.0,336.4
+           L 372.5,301.3
+           L 494.1,205.6
+           L 564.0,127.4
+           L 720.0,4.0
+           L 764.6,15.3
+           L 801.8,40.2
+           L 827.2,93.5
+           L 857.9,205.2
+           L 871.6,216.1
+           L 969.2,197.8
+           L 987.6,210.2
+           L 1046.6,293.8
+           L 1088.6,384.2
+           L 1107.6,391.6
+           L 1132.5,388.1
+           L 1220.0,351.7
+           L 1335.2,317.4
+           L 1427.8,343.2
+           L 1440,480 Z"
+        class="hero__mountain-back">
+      </path>
+
+      <!-- Front silhouette fill -->
+      <path
+        d="M 0,480 L 16.4,322.1
+           L 128.2,364.1
+           L 149.4,360.9
+           L 222.7,309.5
+           L 314.0,336.4
+           L 372.5,301.3
+           L 494.1,205.6
+           L 564.0,127.4
+           L 720.0,4.0
+           L 764.6,15.3
+           L 801.8,40.2
+           L 827.2,93.5
+           L 857.9,205.2
+           L 871.6,216.1
+           L 969.2,197.8
+           L 987.6,210.2
+           L 1046.6,293.8
+           L 1088.6,384.2
+           L 1107.6,391.6
+           L 1132.5,388.1
+           L 1220.0,351.7
+           L 1335.2,317.4
+           L 1427.8,343.2
+           L 1440,480 Z"
+        class="hero__mountain-front">
+      </path>
+
+      <!-- Ridge stroke — animated draw left to right -->
+      <path
+        d="M 16.4,322.1
+           L 128.2,364.1
+           L 149.4,360.9
+           L 222.7,309.5
+           L 314.0,336.4
+           L 372.5,301.3
+           L 494.1,205.6
+           L 564.0,127.4
+           L 720.0,4.0
+           L 764.6,15.3
+           L 801.8,40.2
+           L 827.2,93.5
+           L 857.9,205.2
+           L 871.6,216.1
+           L 969.2,197.8
+           L 987.6,210.2
+           L 1046.6,293.8
+           L 1088.6,384.2
+           L 1107.6,391.6
+           L 1132.5,388.1
+           L 1220.0,351.7
+           L 1335.2,317.4
+           L 1427.8,343.2"
+        class="hero__mountain-ridge">
+      </path>
+
+      <!-- Golden dot — climbs the ridge up to the Fitz Roy summit, then stays put -->
+      <circle r="5" fill="#B8924D" class="hero__dot-gold">
+        <animateMotion
+          path="M 16.4,322.1 L 128.2,364.1 L 149.4,360.9 L 222.7,309.5 L 314.0,336.4 L 372.5,301.3 L 494.1,205.6 L 564.0,127.4 L 720.0,4.0"
+          dur="2.1s" begin="0.3s" fill="freeze"
+          calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1">
+        </animateMotion>
+      </circle>
+
+      <!-- Blue dot — climbs further along the ridge to the secondary shoulder, then stays put -->
+      <circle r="4.5" fill="#3D5A6C" class="hero__dot-blue">
+        <animateMotion
+          path="M 16.4,322.1 L 128.2,364.1 L 149.4,360.9 L 222.7,309.5 L 314.0,336.4 L 372.5,301.3 L 494.1,205.6 L 564.0,127.4 L 720.0,4.0 L 764.6,15.3 L 801.8,40.2 L 827.2,93.5 L 857.9,205.2 L 871.6,216.1 L 969.2,197.8"
+          dur="2.1s" begin="0.3s" fill="freeze"
+          calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1">
+        </animateMotion>
+      </circle>
+    </svg>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Web Development &amp; Maintenance</p>
+      <h1 class="hero__title">
+        Your website,<br>built right.
+      </h1>
+      <p class="hero__subtitle">
+        We build and maintain custom websites for small businesses — from landing pages to full online stores. Delivered in 10–14 business days.
+      </p>
+      <div class="hero__actions">
+        <a href="/cdn-cgi/l/email-protection#ea8e838f8d858b8b8798d8deaa8d878b8386c4898587" class="btn-dark">Start a project</a>
+        <a href="#services" class="link-arrow">See services <span class="hero__arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" class="section">
+    <div class="section__inner">
+      <div class="services__header">
+        <div>
+          <p class="section__eyebrow">What we build</p>
+          <h2 class="section__heading">Website Projects</h2>
+        </div>
+        <p class="services__note">
+          Every project: mobile-responsive design, basic SEO, 3 revisions, 10-14 day delivery, 30 days post-launch support.
+        </p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card service-card--border-bottom-right">
+          <div class="service-card__bar"></div>
+          <p class="service-card__title">Starter Landing Page</p>
+          <p class="service-card__price">Starting at $600</p>
+          <p class="service-card__desc">One page built to convert — hero, services, testimonials, and contact form.</p>
+        </div>
+        <div class="service-card service-card--border-bottom">
+          <div class="service-card__bar"></div>
+          <p class="service-card__title">Business Website</p>
+          <p class="service-card__price">Starting at $1,200</p>
+          <p class="service-card__desc">5-6 pages with full navigation, for businesses that want a complete online presence.</p>
+        </div>
+        <div class="service-card service-card--border-right">
+          <div class="service-card__bar"></div>
+          <p class="service-card__title">WooCommerce Store</p>
+          <p class="service-card__price">Starting at $2,500</p>
+          <p class="service-card__desc">Full online store — up to 20 products, cart, Stripe and PayPal checkout, admin panel.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__bar"></div>
+          <p class="service-card__title">Website Redesign</p>
+          <p class="service-card__price">Starting at $900</p>
+          <p class="service-card__desc">Modernize an existing site — new design, faster load times, fully responsive on all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAINTENANCE ── -->
+  <section id="maintenance" class="section section--dark">
+    <div class="section__inner">
+      <div class="maintenance__header">
+        <p class="section__eyebrow section__eyebrow--gold-light">Ongoing care</p>
+        <h2 class="section__heading section__heading--light">Monthly Maintenance Plans</h2>
+        <p class="maintenance__desc">Outdated plugins are the most common way small business sites get hacked. A plan keeps your site secure, fast, and updated — for a fraction of what recovery costs.</p>
+      </div>
+      <div class="maintenance__list">
+        <!-- Basic -->
+        <div class="maint-row">
+          <div>
+            <p class="maint-row__label">Basic</p>
+            <p class="maint-row__price">$90<span class="maint-row__price-period">/mo</span></p>
+          </div>
+          <div class="maint-row__features">
+            <span class="maint-row__feature">Plugin &amp; core updates</span>
+            <span class="maint-row__feature">Monthly backup</span>
+            <span class="maint-row__feature">Uptime monitoring</span>
+            <span class="maint-row__feature">1 hour of support</span>
+          </div>
+        </div>
+        <!-- Standard -->
+        <div class="maint-row maint-row--highlighted">
+          <div class="maint-row__accent-bar"></div>
+          <div>
+            <div class="maint-row__label-wrap">
+              <p class="maint-row__label">Standard</p>
+              <span class="maint-row__badge">Popular</span>
+            </div>
+            <p class="maint-row__price">$175<span class="maint-row__price-period">/mo</span></p>
+          </div>
+          <div class="maint-row__features">
+            <span class="maint-row__feature">Everything in Basic</span>
+            <span class="maint-row__feature">Minor content changes</span>
+            <span class="maint-row__feature">2-3 hours of support</span>
+            <span class="maint-row__feature">Monthly report</span>
+          </div>
+        </div>
+        <!-- Priority -->
+        <div class="maint-row">
+          <div>
+            <p class="maint-row__label">Priority</p>
+            <p class="maint-row__price">$275<span class="maint-row__price-period">/mo</span></p>
+          </div>
+          <div class="maint-row__features">
+            <span class="maint-row__feature">Everything in Standard</span>
+            <span class="maint-row__feature">Same-day response</span>
+            <span class="maint-row__feature">Up to 5 hours of support</span>
+            <span class="maint-row__feature">Ongoing improvements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section id="process" class="section section--bordered">
+    <div class="section__inner">
+      <div class="process__header">
+        <p class="section__eyebrow">The process</p>
+        <h2 class="section__heading">Getting started is straightforward.</h2>
+      </div>
+      <div class="process__list">
+        <div class="process-step">
+          <p class="process-step__number">01</p>
+          <div>
+            <p class="process-step__title">Reach out</p>
+            <p class="process-step__desc">Tell us what you need — a new site, a redesign, or an online store. No commitment required.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <p class="process-step__number">02</p>
+          <div>
+            <p class="process-step__title">Get a quote</p>
+            <p class="process-step__desc">We confirm scope and price upfront. No surprises, no hourly billing, no guesswork.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <p class="process-step__number">03</p>
+          <div>
+            <p class="process-step__title">We build</p>
+            <p class="process-step__desc">Your site is built and delivered in 10–14 business days. You get 3 rounds of revisions before launch.</p>
+          </div>
+        </div>
+        <div class="process-step process-step--last">
+          <p class="process-step__number">04</p>
+          <div>
+            <p class="process-step__title">We maintain</p>
+            <p class="process-step__desc">Optionally, we keep your site updated, secure, and running smoothly every month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMING SOON ── -->
+  <section class="coming-soon">
+    <div class="coming-soon__inner">
+      <div>
+        <p class="section__eyebrow section__eyebrow--gold-light">What's next</p>
+        <h3 class="coming-soon__title">Marketing &amp; Social Media</h3>
+        <p class="coming-soon__desc">A dedicated partner is building marketing and social media support, designed for small business visibility online. Announcement coming soon.</p>
+      </div>
+      <div class="coming-soon__badge">Coming Soon</div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact">
+    <div class="contact__inner">
+      <div class="contact__main">
+        <p class="section__eyebrow section__eyebrow--gold-light">Let's work together</p>
+        <h2 class="contact__title">Ready to get<br>started?</h2>
+        <p class="contact__desc">Tell us about your project. We'll confirm scope and price upfront — no hourly guessing, no surprises.</p>
+        <a href="/cdn-cgi/l/email-protection#17737e72707876767a65252357707a767e7b3974787a" class="btn-light">Send us an email</a>
+      </div>
+      <div class="contact__details">
+        <div>
+          <p class="contact__detail-label">Email</p>
+          <a href="/cdn-cgi/l/email-protection#21454844464e40404c53131561464c40484d0f424e4c" class="contact-link"><span class="__cf_email__" data-cfemail="6c0805090b030d0d011e5e582c0b010d0500420f0301">contact@montivotech.com</span></a>
+        </div>
+        <div>
+          <p class="contact__detail-label">Website</p>
+          <a href="https://montivotech.com" target="_blank" class="contact-link">montivotech.com</a>
+        </div>
+        <div>
+          <p class="contact__detail-label">Payment</p>
+          <p class="contact__payment-note">50% upfront · 50% on delivery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="site-footer__brand">
+      <svg viewBox="0 0 100 100" class="site-footer__icon" aria-hidden="true">
+        <path d="M38 72 L38 42 L83 22 L83 72" fill="none" stroke="#C7AD79" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"></path>
+        <path d="M13 72 L13 28 L48 56 L48 26" fill="none" stroke="#F4F0E6" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"></path>
+      </svg>
+      <span class="site-footer__wordmark"><span class="site-footer__wordmark-light">Montivo</span><span class="site-footer__wordmark-gold"> Tech</span></span>
+    </div>
+    <p class="site-footer__copy">© 2025 Montivo Tech · Web Development &amp; Maintenance · Diego Montes de Oca &amp; Eddie Nieves</p>
+  </footer>
+
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
