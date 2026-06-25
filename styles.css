@@ -729,7 +729,7 @@ body {
   .hero {
     min-height: auto;
     padding-top: 56px;
-    padding-bottom: 56px;
+    padding-bottom: 14px;
   }
 
   .hero__mountain {
