@@ -67,6 +67,7 @@
            L 1335.2,317.4
            L 1427.8,343.2
            L 1440,480 Z"
+        id="mountain-back"
         class="hero__mountain-back">
       </path>
 
@@ -96,6 +97,7 @@
            L 1335.2,317.4
            L 1427.8,343.2
            L 1440,480 Z"
+        id="mountain-front"
         class="hero__mountain-front">
       </path>
 
@@ -146,17 +148,41 @@
       </circle>
     </svg>
 
-    <div class="hero__content">
+    <div class="hero__content" id="hero-content">
       <p class="hero__eyebrow">Web Development &amp; Maintenance</p>
       <h1 class="hero__title">
         Your website,<br>built right.
       </h1>
       <p class="hero__subtitle">
-        We build and maintain custom websites for small businesses — from landing pages to full online stores. Delivered in 10–14 business days.
+        We build and maintain custom websites for small businesses - from landing pages to full online stores. Delivered in 10–14 business days.
       </p>
       <div class="hero__actions">
         <a href="mailto:contact@montivotech.com" class="btn-dark">Start a project</a>
         <a href="#services" class="link-arrow">See services <span class="hero__arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PAIN SECTION ── -->
+  <section class="pain-section">
+    <div class="section__inner">
+      <div class="pain-grid">
+
+        <div class="pain-card reveal">
+          <p class="pain-card__quote">"I Googled my business and nothing came up."</p>
+          <p class="pain-card__desc">Your customers look you up before they call. If you're not there, they call someone else.</p>
+        </div>
+
+        <div class="pain-card reveal">
+          <p class="pain-card__quote">"I had no idea what I was paying for."</p>
+          <p class="pain-card__desc">We send a clear scope and a fixed price before anything starts. No hourly billing, no surprises — ever.</p>
+        </div>
+
+        <div class="pain-card reveal">
+          <p class="pain-card__quote">"I don't have time to deal with this."</p>
+          <p class="pain-card__desc">You don't have to. We handle the whole thing — design, build, launch — and keep you updated without burying you in details.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -170,29 +196,29 @@
           <h2 class="section__heading">Website Projects</h2>
         </div>
         <p class="services__note">
-          Every project: mobile-responsive design, basic SEO, 3 revisions, 10–14 day delivery, 30 days post-launch support.
+          Every project: mobile-responsive design, basic SEO, 3 revisions, 10-14 day delivery, 30 days post-launch support.
         </p>
       </div>
       <div class="services__grid">
-        <div class="service-card service-card--border-bottom-right">
+        <div class="service-card service-card--border-bottom-right reveal">
           <div class="service-card__bar"></div>
           <p class="service-card__title">Starter Landing Page</p>
           <p class="service-card__price">Starting at $600</p>
           <p class="service-card__desc">One page built to convert — hero, services, testimonials, and contact form.</p>
         </div>
-        <div class="service-card service-card--border-bottom">
+        <div class="service-card service-card--border-bottom reveal">
           <div class="service-card__bar"></div>
           <p class="service-card__title">Business Website</p>
           <p class="service-card__price">Starting at $1,200</p>
-          <p class="service-card__desc">5–6 pages with full navigation, for businesses that want a complete online presence.</p>
+          <p class="service-card__desc">5-6 pages with full navigation, for businesses that want a complete online presence.</p>
         </div>
-        <div class="service-card service-card--border-right">
+        <div class="service-card service-card--border-right reveal">
           <div class="service-card__bar"></div>
           <p class="service-card__title">WooCommerce Store</p>
           <p class="service-card__price">Starting at $2,500</p>
           <p class="service-card__desc">Full online store — up to 20 products, cart, Stripe and PayPal checkout, admin panel.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-card__bar"></div>
           <p class="service-card__title">Website Redesign</p>
           <p class="service-card__price">Starting at $900</p>
@@ -205,56 +231,75 @@
   <!-- ── MAINTENANCE ── -->
   <section id="maintenance" class="section section--dark">
     <div class="section__inner">
-      <div class="maintenance__header">
+
+      <!-- Header -->
+      <div class="maintenance__header reveal">
         <p class="section__eyebrow section__eyebrow--gold-light">Ongoing care</p>
         <h2 class="section__heading section__heading--light">Monthly Maintenance Plans</h2>
-        <p class="maintenance__desc">Outdated plugins are the most common way small business sites get hacked. A plan keeps your site secure, fast, and updated — for a fraction of what recovery costs.</p>
+        <p class="maintenance__desc">Your website isn't something you build once and forget. Expiring domains, pending updates, lapsed SSL certificates, these are the most common reasons a well-built site eventually breaks down. Our plans exist so that's never your problem. You focus on your business. We handle the rest.</p>
       </div>
-      <div class="maintenance__list">
+
+      <!-- Why hire us -->
+      <div class="maint-why reveal">
+        <div class="maint-why__bar"></div>
+        <p class="maint-why__text">The person who built your site knows it best. Keeping it with us means any change, issue, or question is handled by the same person who created it - no need to explain everything from scratch to someone new.</p>
+      </div>
+
+      <!-- Plan cards -->
+      <div class="maint-cards">
+
         <!-- Basic -->
-        <div class="maint-row">
-          <div>
-            <p class="maint-row__label">Basic</p>
-            <p class="maint-row__price">$90<span class="maint-row__price-period">/mo</span></p>
-          </div>
-          <div class="maint-row__features">
-            <span class="maint-row__feature">Plugin &amp; core updates</span>
-            <span class="maint-row__feature">Monthly backup</span>
-            <span class="maint-row__feature">Uptime monitoring</span>
-            <span class="maint-row__feature">1 hour of support</span>
-          </div>
-        </div>
-        <!-- Standard -->
-        <div class="maint-row maint-row--highlighted">
-          <div class="maint-row__accent-bar"></div>
-          <div>
-            <div class="maint-row__label-wrap">
-              <p class="maint-row__label">Standard</p>
-              <span class="maint-row__badge">Popular</span>
+        <div class="maint-card reveal">
+          <div class="maint-card__top">
+            <div>
+              <p class="maint-row__label">Basic</p>
+              <p class="maint-row__price">$90<span class="maint-row__price-period">/mo</span></p>
             </div>
-            <p class="maint-row__price">$175<span class="maint-row__price-period">/mo</span></p>
+            <p class="maint-card__summary">Everything technical, handled. We update, monitor, and back up your site every month so it stays live, secure, and running. Includes annual domain renewal.</p>
           </div>
-          <div class="maint-row__features">
-            <span class="maint-row__feature">Everything in Basic</span>
-            <span class="maint-row__feature">Minor content changes</span>
-            <span class="maint-row__feature">2–3 hours of support</span>
-            <span class="maint-row__feature">Monthly report</span>
-          </div>
+          <ul class="maint-card__list">
+            <li>Plugin &amp; CMS updates</li>
+            <li>Monthly backup</li>
+            <li>Uptime monitoring</li>
+            <li>Domain renewal included</li>
+            <li>1 hour of monthly support</li>
+            <li>Response within 48-72 business hours</li>
+          </ul>
         </div>
-        <!-- Priority -->
-        <div class="maint-row">
-          <div>
-            <p class="maint-row__label">Priority</p>
-            <p class="maint-row__price">$275<span class="maint-row__price-period">/mo</span></p>
+
+        <!-- Pro -->
+        <div class="maint-card maint-card--highlighted reveal">
+          <div class="maint-card__accent-bar"></div>
+          <div class="maint-card__top">
+            <div>
+              <div class="maint-row__label-wrap">
+                <p class="maint-row__label">Pro</p>
+                <span class="maint-row__badge">Popular</span>
+              </div>
+              <p class="maint-row__price">$175<span class="maint-row__price-period">/mo</span></p>
+            </div>
+            <p class="maint-card__summary">For those who want to go further. Full technical maintenance plus monthly reports, content updates, SEO review, and one concrete recommendation every month to keep your site improving over time.</p>
           </div>
-          <div class="maint-row__features">
-            <span class="maint-row__feature">Everything in Standard</span>
-            <span class="maint-row__feature">Same-day response</span>
-            <span class="maint-row__feature">Up to 5 hours of support</span>
-            <span class="maint-row__feature">Ongoing improvements</span>
-          </div>
+          <ul class="maint-card__list">
+            <li>Everything in Basic</li>
+            <li>Minor content updates</li>
+            <li>2 support hours, rollover month to month</li>
+            <li>Monthly report in plain language</li>
+            <li>Basic monthly SEO review</li>
+            <li>Proactive monthly improvement recommendation</li>
+            <li>Response within 24 business hours</li>
+            <li>Priority attention if the site goes down</li>
+          </ul>
         </div>
+
       </div>
+
+      <!-- Cancellation -->
+      <div class="maint-cancel reveal">
+        <p class="maint-cancel__question">What if you cancel?</p>
+        <p class="maint-cancel__answer">Your site is always yours. If you decide to cancel, we hand over the full codebase, a recent backup, and manage the transfer of your domain. No complications.</p>
+      </div>
+
     </div>
   </section>
 
@@ -263,37 +308,58 @@
     <div class="section__inner">
       <div class="process__header">
         <p class="section__eyebrow">The process</p>
-        <h2 class="section__heading">Getting started is straightforward.</h2>
+        <h2 class="section__heading">Simple from start to finish.</h2>
       </div>
-      <div class="process__list">
-        <div class="process-step">
-          <p class="process-step__number">01</p>
-          <div>
-            <p class="process-step__title">Reach out</p>
-            <p class="process-step__desc">Tell us what you need — a new site, a redesign, or an online store. No commitment required.</p>
+      <div class="process-grid">
+
+        <div class="process-card reveal">
+          <div class="process-card__icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M20 4C11.163 4 4 11.163 4 20s7.163 16 16 16 16-7.163 16-16S28.837 4 20 4Z" stroke="#A9863F" stroke-width="1.5"/>
+              <path d="M13 20l5 5 9-9" stroke="#A9863F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
+          <p class="process-card__step">01</p>
+          <p class="process-card__title">Reach out</p>
+          <p class="process-card__desc">Tell us what you need - a new site, a redesign, or an online store. We'll get back to you within one business day. No commitment required.</p>
         </div>
-        <div class="process-step">
-          <p class="process-step__number">02</p>
-          <div>
-            <p class="process-step__title">Get a quote</p>
-            <p class="process-step__desc">We confirm scope and price upfront. No surprises, no hourly billing, no guesswork.</p>
+
+        <div class="process-card reveal">
+          <div class="process-card__icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M8 10a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H14l-6 4V10Z" stroke="#A9863F" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 17h12M14 22h8" stroke="#A9863F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
           </div>
+          <p class="process-card__step">02</p>
+          <p class="process-card__title">Get a clear quote</p>
+          <p class="process-card__desc">We define the scope and send you a fixed price. No hourly billing, no vague estimates - you know exactly what you're getting before anything starts.</p>
         </div>
-        <div class="process-step">
-          <p class="process-step__number">03</p>
-          <div>
-            <p class="process-step__title">We build</p>
-            <p class="process-step__desc">Your site is built and delivered in 10–14 business days. You get 3 rounds of revisions before launch.</p>
+
+        <div class="process-card reveal">
+          <div class="process-card__icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M14 8h12v6l4 4-4 4v6H14v-6l-4-4 4-4V8Z" stroke="#A9863F" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M17 20h6M20 17v6" stroke="#A9863F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
           </div>
+          <p class="process-card__step">03</p>
+          <p class="process-card__title">We build it</p>
+          <p class="process-card__desc">Your site is built and delivered in 10-14 business days. You get 3 rounds of revisions before launch, and 30 days of support after it goes live.</p>
         </div>
-        <div class="process-step process-step--last">
-          <p class="process-step__number">04</p>
-          <div>
-            <p class="process-step__title">We maintain</p>
-            <p class="process-step__desc">Optionally, we keep your site updated, secure, and running smoothly every month.</p>
+
+        <div class="process-card reveal">
+          <div class="process-card__icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M20 6c-1 4-4 6-8 6 0 8 3 14 8 18 5-4 8-10 8-18-4 0-7-2-8-6Z" stroke="#A9863F" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M16 20l3 3 5-6" stroke="#A9863F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
+          <p class="process-card__step">04</p>
+          <p class="process-card__title">We keep it running</p>
+          <p class="process-card__desc">Optionally, we keep your site updated, secure, and improving month after month - handled by the same person who built it.</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -316,7 +382,7 @@
       <div class="contact__main">
         <p class="section__eyebrow section__eyebrow--gold-light">Let's work together</p>
         <h2 class="contact__title">Ready to get<br>started?</h2>
-        <p class="contact__desc">Tell us about your project. We'll confirm scope and price upfront — no hourly guessing, no surprises.</p>
+        <p class="contact__desc">Tell us about your project. We'll confirm scope and price upfront - no hourly guessing, no surprises.</p>
         <a href="mailto:contact@montivotech.com" class="btn-light">Send us an email</a>
       </div>
       <div class="contact__details">
@@ -349,6 +415,76 @@
   </footer>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* Parallax del hero: capas de la montaña y contenido se mueven
+     a distinta velocidad mientras el hero sale de pantalla. */
+  gsap.to("#mountain-back", {
+    y: -40,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to("#mountain-front", {
+    y: -80,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to("#hero-content", {
+    y: -60,
+    opacity: 0.3,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  /* Scroll reveal: fade + slide-up para service cards,
+     maintenance rows y process steps al entrar al viewport. */
+  gsap.utils.toArray(".reveal").forEach(function (el, i) {
+    gsap.fromTo(
+      el,
+      { y: 32, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        ease: "power2.out",
+        delay: (i % 4) * 0.08,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 88%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+  });
+</script>
+
+<script>
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname);
+    window.scrollTo(0, 0);
+  }
+</script>
 
 </body>
 </html>
