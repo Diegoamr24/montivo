@@ -3,19 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Montivo Tech — Web Development &amp; Maintenance</title>
+
+  <!-- ── Primary SEO ── -->
+  <title>Montivo Tech - Web Design & Development for Small Businesses</title>
+  <meta name="description" content="Custom websites for small businesses across the United States. Fixed price, 2-week delivery, no surprises. Landing pages from $600, full business websites from $1,200.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#15211C">
+  <link rel="canonical" href="https://montivotech.com/">
+
+  <!-- ── Open Graph (Facebook, LinkedIn, WhatsApp) ── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://montivotech.com/">
+  <meta property="og:title" content="Montivo Tech - Web Design for Small Businesses">
+  <meta property="og:description" content="Custom websites built in 2 weeks, fixed price, no surprises. We build and maintain websites for small businesses across the US.">
+  <meta property="og:image" content="https://montivotech.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Montivo Tech">
+
+  <!-- ── Twitter / X Card ── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://montivotech.com/">
+  <meta name="twitter:title" content="Montivo Tech - Web Design for Small Businesses">
+  <meta name="twitter:description" content="Custom websites built in 2 weeks, fixed price, no surprises. We build and maintain websites for small businesses across the US.">
+  <meta name="twitter:image" content="https://montivotech.com/og-image.jpg">
+
+  <!-- ── Fonts ── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ── Styles ── -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="montivo-favicon.svg">
+
+  <!-- ── Schema Markup: ProfessionalService (AI Overviews + Google) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Montivo Tech",
+    "url": "https://montivotech.com",
+    "logo": "https://montivotech.com/montivo-favicon.svg",
+    "image": "https://montivotech.com/og-image.jpg",
+    "description": "Montivo Tech builds and maintains custom websites for small businesses across the United States. We deliver landing pages, business websites, and WooCommerce stores with fixed pricing and a 2-week turnaround.",
+    "email": "contact@montivotech.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": [
+      "Web Design",
+      "Web Development",
+      "Website Maintenance",
+      "WooCommerce Development",
+      "Landing Page Design",
+      "Website Redesign"
+    ],
+    "priceRange": "$600 - $2,500",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Bank Transfer, PayPal, Stripe",
+    "sameAs": [
+      "https://www.linkedin.com/company/montivotech",
+      "https://www.instagram.com/montivotech"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Starter Landing Page",
+          "description": "One-page website built to convert - hero, services, testimonials, and contact form.",
+          "price": "600",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Business Website",
+          "description": "5-6 page website with full navigation for businesses that want a complete online presence.",
+          "price": "1200",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "WooCommerce Store",
+          "description": "Full online store with up to 20 products, cart, Stripe and PayPal checkout.",
+          "price": "2500",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Website Redesign",
+          "description": "Modernize an existing site with new design, faster load times, and full mobile responsiveness.",
+          "price": "900",
+          "priceCurrency": "USD"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
 <div class="page-wrap">
 
   <!-- ── NAV ── -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <a href="#" class="navbar__brand">
       <svg viewBox="0 0 100 100" class="navbar__brand-icon" aria-hidden="true">
         <path d="M38 72 L38 42 L83 22 L83 72" fill="none" stroke="#A9863F" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"></path>
@@ -35,7 +130,7 @@
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
+  <main>
   <section class="hero">
 
     <!-- Fitz Roy mountain — brand mark -->
@@ -154,7 +249,7 @@
         Your website,<br>built right.
       </h1>
       <p class="hero__subtitle">
-        We build and maintain custom websites for small businesses - from landing pages to full online stores. Delivered in 10–14 business days.
+        We build and maintain custom websites for small businesses — from landing pages to full online stores. Delivered in 10–14 business days.
       </p>
       <div class="hero__actions">
         <a href="mailto:contact@montivotech.com" class="btn-dark">Start a project</a>
@@ -196,7 +291,7 @@
           <h2 class="section__heading">Website Projects</h2>
         </div>
         <p class="services__note">
-          Every project: mobile-responsive design, basic SEO, 3 revisions, 10-14 day delivery, 30 days post-launch support.
+          Every project: mobile-responsive design, basic SEO, 3 revisions, 10–14 day delivery, 30 days post-launch support.
         </p>
       </div>
       <div class="services__grid">
@@ -210,7 +305,7 @@
           <div class="service-card__bar"></div>
           <p class="service-card__title">Business Website</p>
           <p class="service-card__price">Starting at $1,200</p>
-          <p class="service-card__desc">5-6 pages with full navigation, for businesses that want a complete online presence.</p>
+          <p class="service-card__desc">5–6 pages with full navigation, for businesses that want a complete online presence.</p>
         </div>
         <div class="service-card service-card--border-right reveal">
           <div class="service-card__bar"></div>
@@ -236,13 +331,13 @@
       <div class="maintenance__header reveal">
         <p class="section__eyebrow section__eyebrow--gold-light">Ongoing care</p>
         <h2 class="section__heading section__heading--light">Monthly Maintenance Plans</h2>
-        <p class="maintenance__desc">Your website isn't something you build once and forget. Expiring domains, pending updates, lapsed SSL certificates, these are the most common reasons a well-built site eventually breaks down. Our plans exist so that's never your problem. You focus on your business. We handle the rest.</p>
+        <p class="maintenance__desc">Your website isn't something you build once and forget. Expiring domains, pending updates, lapsed SSL certificates — these are the most common reasons a well-built site eventually breaks down. Our plans exist so that's never your problem. You focus on your business. We handle the rest.</p>
       </div>
 
       <!-- Why hire us -->
       <div class="maint-why reveal">
         <div class="maint-why__bar"></div>
-        <p class="maint-why__text">The person who built your site knows it best. Keeping it with us means any change, issue, or question is handled by the same person who created it - no need to explain everything from scratch to someone new.</p>
+        <p class="maint-why__text">The person who built your site knows it best. Keeping it with us means any change, issue, or question is handled by the same person who created it — no need to explain everything from scratch to someone new.</p>
       </div>
 
       <!-- Plan cards -->
@@ -263,7 +358,7 @@
             <li>Uptime monitoring</li>
             <li>Domain renewal included</li>
             <li>1 hour of monthly support</li>
-            <li>Response within 48-72 business hours</li>
+            <li>Response within 48–72 business hours</li>
           </ul>
         </div>
 
@@ -321,7 +416,7 @@
           </div>
           <p class="process-card__step">01</p>
           <p class="process-card__title">Reach out</p>
-          <p class="process-card__desc">Tell us what you need - a new site, a redesign, or an online store. We'll get back to you within one business day. No commitment required.</p>
+          <p class="process-card__desc">Tell us what you need — a new site, a redesign, or an online store. We'll get back to you within one business day. No commitment required.</p>
         </div>
 
         <div class="process-card reveal">
@@ -333,7 +428,7 @@
           </div>
           <p class="process-card__step">02</p>
           <p class="process-card__title">Get a clear quote</p>
-          <p class="process-card__desc">We define the scope and send you a fixed price. No hourly billing, no vague estimates - you know exactly what you're getting before anything starts.</p>
+          <p class="process-card__desc">We define the scope and send you a fixed price. No hourly billing, no vague estimates — you know exactly what you're getting before anything starts.</p>
         </div>
 
         <div class="process-card reveal">
@@ -345,7 +440,7 @@
           </div>
           <p class="process-card__step">03</p>
           <p class="process-card__title">We build it</p>
-          <p class="process-card__desc">Your site is built and delivered in 10-14 business days. You get 3 rounds of revisions before launch, and 30 days of support after it goes live.</p>
+          <p class="process-card__desc">Your site is built and delivered in 10–14 business days. You get 3 rounds of revisions before launch, and 30 days of support after it goes live.</p>
         </div>
 
         <div class="process-card reveal">
@@ -357,7 +452,7 @@
           </div>
           <p class="process-card__step">04</p>
           <p class="process-card__title">We keep it running</p>
-          <p class="process-card__desc">Optionally, we keep your site updated, secure, and improving month after month - handled by the same person who built it.</p>
+          <p class="process-card__desc">Optionally, we keep your site updated, secure, and improving month after month — handled by the same person who built it.</p>
         </div>
 
       </div>
@@ -382,7 +477,7 @@
       <div class="contact__main">
         <p class="section__eyebrow section__eyebrow--gold-light">Let's work together</p>
         <h2 class="contact__title">Ready to get<br>started?</h2>
-        <p class="contact__desc">Tell us about your project. We'll confirm scope and price upfront - no hourly guessing, no surprises.</p>
+        <p class="contact__desc">Tell us about your project. We'll confirm scope and price upfront — no hourly guessing, no surprises.</p>
         <a href="mailto:contact@montivotech.com" class="btn-light">Send us an email</a>
       </div>
       <div class="contact__details">
@@ -392,7 +487,7 @@
         </div>
         <div>
           <p class="contact__detail-label">Website</p>
-          <a href="https://montivotech.com" target="_blank" class="contact-link">montivotech.com</a>
+          <a href="https://montivotech.com" target="_blank" rel="noopener noreferrer" class="contact-link">montivotech.com</a>
         </div>
         <div>
           <p class="contact__detail-label">Payment</p>
@@ -401,6 +496,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ── FOOTER ── -->
   <footer class="site-footer">
@@ -416,9 +513,9 @@
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script defer>
   gsap.registerPlugin(ScrollTrigger);
 
   /* Parallax del hero: capas de la montaña y contenido se mueven
